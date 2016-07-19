@@ -160,7 +160,7 @@ $ sudo service redis_6379 start
 $ sudo service nginx stop
 $ git clone https://github.com/letsencrypt/letsencrypt
 $ cd letsencrypt
-$ ./letsencrypt-auto certonly --standalone -d play.dobest.io
+$ ./letsencrypt-auto certonly --standalone -d [DOMAIN ADDRESS]
 ```
 
 개인키와 인증키가 잘 가져와졌는지 확인
