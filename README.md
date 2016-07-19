@@ -15,15 +15,16 @@ $ sudo apt-get upgrade
 ```
 
 ##Install git
-
 `$ sudo apt-get install git`
 
 ##Install pyenv
 [https://github.com/yyuu/pyenv/wiki/Common-build-problems](https://github.com/yyuu/pyenv/wiki/Common-build-problems)
+
 `$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
 libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils`
 
 [https://github.com/yyuu/pyenv-installer](https://github.com/yyuu/pyenv-installer)
+
 `$ curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash`
 
 `~/.bash_profile`에 아래의 세 줄 추가
