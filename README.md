@@ -116,6 +116,8 @@ $ sudo make install
 
 nginx를  편리하게 구동하기 위해
 
+[https://github.com/JasonGiedymin/nginx-init-ubuntu](https://github.com/JasonGiedymin/nginx-init-ubuntu)
+
 ```
 $ sudo wget https://raw.githubusercontent.com/JasonGiedymin/nginx-init-ubuntu/master/nginx -O /etc/init.d/nginx
 $ sudo chmod +x /etc/init.d/nginx
