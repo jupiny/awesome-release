@@ -259,11 +259,11 @@ http {
 
 `$ make migrate`
 
-`$ m collectstatic`
-
 `$ sudo apt-get install npm nodejs-legacy`
 
 `$ sudo npm install -g yuglify`
+
+`$ python [DJANGO_PROJECT_FOLDER]/manage.py collectstatic`
 
 서버를 구동시켜 잘 나오는지 확인
 
