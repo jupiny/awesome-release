@@ -77,7 +77,7 @@ Postgresql의 CLI(Command Line Interface)인 `psql`로 postgres 데이터베이�
 
 psql 종료
  
-`\q` or **[Ctrl + d]**
+`\q` 또는 **[Ctrl + d]**
 
 postgres 계정에서 나온 후,
 
