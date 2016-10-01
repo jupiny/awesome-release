@@ -55,9 +55,13 @@ eval "$(pyenv virtualenv-init -)"
 
 `$ sudo apt-get install postgresql postgresql-contrib`
 
-최고 관리자 계정인 postgres으로 데이터베이스 접속
+최고 관리자 계정인 postgres으로 전환
 
 `$ sudo -i -u postgres`
+
+Postgresql의 CLI(Command Line Interface)인 `psql`로 postgres 데이터베이스에 접속
+
+`$ psql -d postgres` 또는 `$ psql postgres` 또는 `$ psql`
 
 새로운 계정의 이름과 비밀번호 생성
 
@@ -71,13 +75,15 @@ eval "$(pyenv virtualenv-init -)"
 
 `GRANT ALL PRIVILEGES ON DATABASE [DATABASE NAME] to [USERNAME];`
 
-`$ psql -d [DATABASE NAME]`
-
-데이터베이스에서 나온 후,
+psql 종료
  
-`/q`
+`\q` or **[Ctrl + d]**
 
-root 계정으로 로그인
+postgres 계정에서 나온 후,
+
+`$ exit`
+
+root 계정으로 전환
 
 `$ sudo -s`
 
@@ -93,7 +99,11 @@ root 계정으로 로그인
 
 `$ sudo service postgresql restart`
 
-아까 만든 계정으로 로그인 후 데이터베이스 접속되는지 확인
+root 계정에서 나온 후,
+
+`$ exit`
+
+아까 만든 계정으로 새로 생성한 데이터베이스 접속되는지 확인
 
 `$ psql -U [USERNAME] -d [DATABASE NAME] -W`
 
