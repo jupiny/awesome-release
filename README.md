@@ -20,8 +20,9 @@ $ sudo apt-get upgrade
 ##Install pyenv
 [https://github.com/yyuu/pyenv/wiki/Common-build-problems](https://github.com/yyuu/pyenv/wiki/Common-build-problems)
 
-`$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
-libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils`
+```
+$ sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils
+```
 
 [https://github.com/yyuu/pyenv-installer](https://github.com/yyuu/pyenv-installer)
 
@@ -35,13 +36,25 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 ```
 
-`$ pyenv install 3.5.1`
+`~/.bash_profile` 재실행
 
-`$ pyenv virtualenv 3.5.1 [ENV NAME]`
+`$ source ~/.bash_profile`
+
+pyenv로 원하는 Python 버젼 설치
+
+`$ pyenv install [PYTHON VERSION]`
+
+Python 버젼에 해당하는 가상환경 생성
+
+`$ pyenv virtualenv [PYTHON VERSION] [ENV NAME]`
 
 `~/.bash_profile`에 다음 줄 추가 
 
 `$ pyenv activate [ENV NAME]`
+
+`~/.bash_profile` 재실행
+
+`$ source ~/.bash_profile`
 
 ##Install autoenv
 `$ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv`
@@ -49,6 +62,10 @@ eval "$(pyenv virtualenv-init -)"
 `~/.bash_profile`에 다음 줄 추가
 
 `source ~/.autoenv/activate.sh`
+
+`~/.bash_profile` 재실행
+
+`$ source ~/.bash_profile`
 
 ##Install Postgresql
 [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
