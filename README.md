@@ -110,7 +110,7 @@ root 계정으로 전환
 
 비밀번호를 통해서 데이터베이스에 들어올 수 있게 하기 위해 설정 변경
 
-`$ sudo vi /etc/postgresql/9.3/main/pg_hba.conf`
+`$ sudo vi /etc/postgresql/[POSTGRESQL VERSION]/main/pg_hba.conf`
 
 90번째 줄에서 `peer`를 `md5`로 변경 후 데이터베이스 재시작
 
@@ -270,7 +270,7 @@ http {
 
 `psycopg2`라는 라이브러리가 프로젝트에 설치되어 있어야 한다면, 아래를 실행
 
-`$ sudo apt-get install postgresql-server-dev-9.3`
+`$ sudo apt-get install postgresql-server-dev-[POSTGRESQL VERSION]`
 
 라이브러리 설치
 
@@ -294,7 +294,7 @@ http {
 
 서버를 구동시켜 잘 나오는지 확인
 
-`$ honcho start web`
+`$ honcho start`
 
 만약 `honcho`를 재시작해야 경우가 생긴다면,
 
@@ -307,4 +307,4 @@ http {
 
 `$ kill -9 [PID]`
  
-`$ honcho start web`
+`$ honcho start`
