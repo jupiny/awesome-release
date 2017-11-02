@@ -1,4 +1,4 @@
-##How to start
+## How to start
 `.pem`파일이 수정될 수 없도록 권한 변경
 
 `$ chmod 400 [PEM NAME].pem`
@@ -14,10 +14,10 @@ $ sudo apt-get update
 $ sudo apt-get upgrade
 ```
 
-##Install git
+## Install git
 `$ sudo apt-get install git`
 
-##Install pyenv
+## Install pyenv
 [https://github.com/yyuu/pyenv/wiki/Common-build-problems](https://github.com/yyuu/pyenv/wiki/Common-build-problems)
 
 ```
@@ -56,7 +56,7 @@ Python 버젼에 해당하는 가상환경 생성
 
 `$ source ~/.bash_profile`
 
-##Install autoenv
+## Install autoenv
 `$ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv`
 
 `~/.bash_profile`에 다음 줄 추가
@@ -67,7 +67,7 @@ Python 버젼에 해당하는 가상환경 생성
 
 `$ source ~/.bash_profile`
 
-##Install Postgresql
+## Install Postgresql
 [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04)
 
 `$ sudo apt-get install postgresql postgresql-contrib`
@@ -124,7 +124,7 @@ root 계정에서 나온 후,
 
 `$ psql -U [USERNAME] -d [DATABASE NAME] -W`
 
-##Install nginx
+## Install nginx
 
 [https://developers.google.com/speed/pagespeed/module/build_ngx_pagespeed_from_source#build-instructions](https://developers.google.com/speed/pagespeed/module/build_ngx_pagespeed_from_source#build-instructions)
 
@@ -159,7 +159,7 @@ nginx 시작하여 되는지 확인
 `sudo rm -f -R /usr/local/nginx && rm -f /usr/local/sbin/nginx`
 
 
-##Install Redis
+## Install Redis
 [https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis)
 
 `$ sudo apt-get install tcl8.5`
@@ -180,7 +180,7 @@ $ sudo service redis_6379 start
 
 `$ redis-cli`
 
-##Get SSL authentication
+## Get SSL authentication
 [https://dobest.io/gettings-started-with-jupyterhub/](https://dobest.io/gettings-started-with-jupyterhub/)
 
 ```
@@ -200,7 +200,7 @@ $ ./letsencrypt-auto certonly --standalone -d [DOMAIN ADDRESS]
 
 `$ sudo cat /etc/letsencrypt/live/[DOMAIN ADDRESS]/fullchain.pem`
 
-##Setting nginx
+## Setting nginx
 
 `$ sudo vi /usr/local/nginx/conf/nginx.conf`
 
@@ -258,7 +258,7 @@ http {
 
 `$ python -m http.server 5736`
 
-##Get django project
+## Get django project
 `$ git clone [PROJECT GIT ADDRESS]`
 
 라이브러리를 설치하기 전에
